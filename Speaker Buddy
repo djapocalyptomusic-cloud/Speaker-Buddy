@@ -1,0 +1,24 @@
+# Speaker Buddy
+
+Speaker Buddy is an audio plugin that keeps sub frequencies below 100 Hz completely mono.
+
+It splits the stereo signal at 100 Hz, averages the left and right low-frequency bands, sends that same mono sub signal to both speakers, and keeps the stereo high-frequency content above the crossover.
+
+## Downloading the `.pkg`
+
+1. Open this repository on GitHub.
+2. Click **Actions**.
+3. Click the newest **Build macOS PKG** run.
+4. Download the **SpeakerBuddy-macOS-pkg** artifact.
+5. Unzip it and run `Speaker Buddy.pkg`.
+
+## What gets installed
+
+The package installs:
+
+- Audio Unit: `/Library/Audio/Plug-Ins/Components/Speaker Buddy.component`
+- VST3: `/Library/Audio/Plug-Ins/VST3/Speaker Buddy.vst3`
+
+## License
+
+This project is released under the license selected for this repository.
